@@ -25,8 +25,7 @@ router.get('/', (req, res, next) => {
   }
 
   if (!req.query.token || req.query.token.length < 10) {
-    res.send('nono...')
-    return next()
+    return res.status(200).send('22nono...')
   }
 
   console.log('yes')
